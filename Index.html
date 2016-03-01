@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+
+<!-- ML STRENGTH COMPANY WEBSITE -->
+
+<!-- I choose ML Strength as company profile and built the following website on the "Layout A" mock-up and the "Blue" stylesheet -->
+
+
+<!-- Student name: Dorian Trevisan Vanusca Corneliu -->
+<!-- Student number: 1100090915 -->
+
+
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Home Page</title>
+        <!-- link to the CSS style sheet -->
+	<link rel="stylesheet" href="../CSS/Style1.css" />
+        <!-- little favicon -->
+    <link rel="icon" href="../Images/ML_favicon.png" type="image/x-icon">
+    
+</head>
+
+<body>
+    
+    <!-- Set a division "frame" to contain all the elements in the page and apply the proper size -->
+        <!-- This website will be fully displayed on all the display resolutions equal or higher than 930x760 -->
+	<div class="frame">
+    	
+        
+        <!-- The navigation bar on the left side of the page -->
+        <nav>
+        	
+            <!-- Set a place for the logo -->
+            <div class="logo">
+            	<a href="Index.html"><img src="../Images/ML_logo.png" id="logo" alt="business logo"></a>
+            </div>
+            
+            <!-- Set a place for the navigation buttons -->
+            <div class="buttons">
+                
+                <!-- A table instead of a list allows to handle better the spacings and borders and obtain a final result more similar to the mock-up -->
+            	<table class="menu">
+                	<tr> <td class="marked"> <a href="Index.html"> HOME </a> </td> </tr>
+                    <tr> <td class="unmarked"> <a href="AboutUs.html"> ABOUT </a> </td> </tr>
+                    <tr> <td class="unmarked"> <a href="Timetable.html"> TIMETABLE </a> </td> </tr>
+                    <tr> <td class="unmarked"> <a href="Contact.html"> CONTACT </a> </td> </tr>
+                    <tr> <td class="unmarked"> <a href="Login.php"> LOG IN </a> </td> </tr>
+                    <tr> <td class="phone"> <img src="../Images/orangePhone.png" id="phoneImg" alt="small phone"> 1800 234 567 </td> </tr>
+                </table>
+            
+            </div>
+            
+        </nav>
+        
+        
+        <!-- The aside content will be floating on the right side of the page -->
+        <aside>
+        
+            <!-- "Find a Class" button -->
+        	<div class="find">
+            	<a href="Timetable.html">Find a Class <img src="../Images/orangeArrow.png" alt="little orange arrow"></a>
+            </div>
+            
+            <!-- "Contact Us" button -->
+            <div class="contact">
+            	<a href="Contact.html">Contact Us <img src="../Images/orangeArrow.png" alt="little orange arrow"></a>
+            </div>
+            
+            <!-- Small box with some advertising material, it is displayed as a list of sentences -->
+            <div class="why">
+            	<a href="">Why Join Us?</a>
+                
+                <ul class="why">
+                	<li>We are cheap!</li>
+                    <li>We are awesome!</li>
+                    <li>We are open 24/7!</li>
+                    <li>We are close to you!</li>
+                    <li>We are new!</li>
+                    <li>We are the best!</li>
+                    <li>We are what you want!</li>
+                </ul>
+            </div>
+            
+            <!-- Image box, can become a slide show with some scripts... -->
+            <div class="imageRoll">
+                
+                    <!-- I will leave the source of this image empty as it will be filled by the SlideShow script when the page opens -->
+            	<img src="" id="imgRoll" class="imgRoll" alt="Slide show">
+                
+                    <!-- This alternative image will display only if the user had disabled the javascripts, it will overlap the slideshow and display a static image instead -->
+                <noscript><img src="../Images/ImgRoll1.jpg" class="alternativeImg" alt="Picture of the gym"></noscript>
+                
+            </div>
+            
+        </aside>
+        
+        
+        
+        <!-- Page content -->
+      <section>
+        
+          <h1><small>WELCOME TO</small> <br> ML STRENGTH GYM</h1>
+            
+          <p>
+          We train athletes – professional, collegiate, youth, and anybody that wants to train like an athlete. When we speak of training we are talking about speed, strength, power, and sports therapy.
+Our business is aimed at a health conscience adult who wants to move beyond the usual local gym.<br><br>
+              We are a Brisbane based company with clubs at Ashgrove, Brisbane City, Chermside, Graceville and Westlake. <br><br>
+              <strong>WE ARE OPEN!</strong> Unlike other so called 24:7 gyms, we are staffed all the time. If you need a late night workout, a protein bar or shake, supplements or a cool t-shirt, we are open for you. Our class times change constantly so check out for the timetable at each of our clubs. 
+ </p>
+        
+        </section>
+        
+
+
+	</div>	
+    
+    <!-- The footer will be set on the bottom-right side of the page -->
+        <footer>
+        
+        <p>
+    	&copy; ML Strength 2015 | Website by Dorian Trevisan | 
+            
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+        </a>
+            </p>
+    </footer>
+
+    <!-- Link to the JS sript file that allows the Slide Show -->
+    
+<script src="../Script/script.js"></script>    
+    
+</body>
+</html>
