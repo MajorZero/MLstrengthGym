@@ -1,0 +1,552 @@
+@charset "UTF-8";
+
+
+/* Set some generic properties to he whole page */
+body{
+	/* background-color: #a8a8a8; */
+    background-image: url(../Images/SV_fitness_center.jpg);
+    background-size: cover;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-style:normal;
+	color:#666666;
+    
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+    /* PAGE FRAME */
+
+/* The frame div sets the content container size to a fixed 1024px width and center the container in the middle of the page */
+div.frame{
+    background-color: #FFF;
+    margin:0 auto;
+	padding:8px;
+	border-radius: 10px;
+    
+	width:1024px;
+    min-height: 760px;
+    
+    opacity: 0.92;
+    
+	}
+
+    /* SIDE NAVIGATION BAR */
+
+/* The navigation bar is floating on the left side of the page */
+nav{
+	background-color:#266098;
+    width: 22%;
+	margin:0px;
+	padding:0px;
+	border:none;
+	float:left;
+    border-radius: 10px;
+	}
+
+        /* This div sets the space for the logo in case the image does not load or is being changed */
+		div.logo{
+			margin:0 auto;
+			border:none;
+			
+			height:180px;
+			width:100%;
+			}
+			
+				img#logo{
+					height:100%;
+					width:100%;
+					}
+		
+        /* Set the style for the navigation buttons */
+		div.buttons{
+			border:none;
+			padding:15px;
+			}
+			     
+                /* Set the spacing and borders for the buttons */
+				table.menu{
+					width:100%;
+					margin:15px auto;
+					margin-top: 5px;
+					border-collapse:collapse;
+					border-style:none;
+					
+					font-family:Tahoma, Geneva, sans-serif;
+					font-size:24px;
+					}
+                /* The "marked" button is the current page */
+				td.unmarked{
+					padding-left:35px;
+					padding-top:10px;
+					padding-bottom:10px;
+					border-top: #EF8200 solid 2px;
+					}
+
+                td.marked{
+					padding-left:35px;
+					padding-top:10px;
+					padding-bottom:10px;
+					border-top: #EF8200 solid 2px;
+					}
+                    td.marked a{color: #FF9F00;}
+                
+                td.submenu
+                    {
+                    padding-left:65px;
+					padding-top:10px;
+					padding-bottom:10px;
+					border-top: #EF8200 solid 2px;
+                        font-size: 12px;
+                    }
+
+				td.phone{
+					padding-left:10px;
+					padding-top:15px;
+					padding-bottom:10px;
+					color: #EF8200;
+                    text-shadow: 1px 1px #000000;
+					border-top: #EF8200 solid 2px;
+				}
+				img#phoneImg{
+					height: 24px;
+					width: 24px;
+				}
+                img.imgRoll{
+                    height: 100%;
+                    width: 100%;
+                }
+
+    /* MAIN SECTION */
+
+/* Set the style for the main content of the page */
+section{
+	/*width:430px;*/
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	padding:35px;
+    border:none;
+	}
+	
+    /* Set the proper style for the table */
+	table.timetable{
+		width:100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+		margin:0 auto;
+		margin-top: 5px;
+		border-collapse:collapse;
+		border-style:solid;
+		border-color:#666666;
+		border-width:2px;
+		
+		font:Tahoma, Geneva, sans-serif bold;
+		font-size:14px;
+        text-align: center;
+		}
+			
+			table.timetable th{
+				color:white;
+				background-color:#666666;
+                padding-top: 10px;
+                padding-bottom: 10px;
+				}
+
+                table.timetable td{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+				
+                /* Set alternate color shades for each table row */
+				tr.dark{
+					background-color:#C5C5C5;
+					}
+				tr.light{
+					background-color:#FFFFFF;
+					}
+	
+    /* ASIDE */
+
+/* The aside section is floating on the right side of the page */
+aside{
+	/*width:190px;*/
+    width: 18%;
+	margin:0px;
+	margin-top: 60px;
+	border:none;
+	float:right;
+	}
+	
+        /* Set the styling for the 2 buttons on the top-right side, "Find Class" and "Contact Us" */
+		div.find{
+			padding:15px;
+			
+			background-color: #A3C6E8;
+			margin-bottom: 6px;
+            color: #EF8200;
+            
+            border-radius: 10px;
+			}
+			
+		div.contact{
+			padding:15px;
+			
+			background-color: #5193D3;
+			margin-bottom: 6px;
+            color: #EF8200;
+            
+            border-radius: 10px;
+			}
+			
+        /* Small box with some advertising material, it is displayed as a list of sentences */
+		div.why{
+            font-size: 14px;
+			padding:5px;
+			background-color: #266098;
+			margin-bottom: 6px;
+			text-align: center;
+            
+            border-radius: 10px;
+			}
+			
+			ul.why{
+                text-align: left;
+				list-style-image: url(../Images/orangeTick.png);
+				margin-top:10px;
+				margin-left:auto;
+				margin-right:auto;
+				
+				color: #EF8200;
+			}
+		
+        /* Display some images of the gym, can become a slide show with some scripts */
+		div.imageRoll{
+            display: block;
+            height:240px;
+            width: 100%;
+			background-color: #666666;
+			margin-bottom: 6px;
+		}
+
+    /* FOR SLIDESHOW FADE EFFECT */
+
+/* Remove the border from images as link */
+a img{
+	border:0;
+	}
+
+
+/* To make the fade effect with the Slide Show script */
+#imgRoll {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#imgRoll.fadeOut {
+    opacity:0;
+}
+
+/* This alternative image will display only if the user had disabled the javascripts, it will overlap the slideshow and display a static image instead */
+
+img.alternativeImg
+{
+    position: relative;
+    top: -240px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+
+    /* FOOTER */
+
+/* Set the footer on the bottom-right side of the page */
+footer{
+    position:relative;
+    width:980px;
+    margin:0 auto;
+    
+    bottom:60px;
+	border:none;
+	text-align: right;
+    
+    clear:both;
+    
+	}
+
+    /* OTHER ELEMENTS */
+
+/* Styling the Contact Form */
+legend {
+    /* Center the form on the page */
+    margin: 0 auto;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #8b8b8b;
+    border-radius: 10px;
+}
+
+input, textarea{
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-style:normal;
+	color:#666666;
+}
+
+/* To give a highlight on active elements */
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+
+
+/* Some more specific stylings */
+
+
+h1{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:40px;
+	font-weight:bold;
+	color:#266098;
+    text-align: center;
+	}
+
+h2{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:24px;
+	}
+	
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-style:normal;
+	color:#666666;
+	}
+
+
+
+/*Styling the tables produced by the Membership.php file*/
+
+
+table.usersTable
+{
+    border-bottom: solid 1px grey;
+}
+table.usersTable th
+{
+    text-align: left;
+    border-top: solid 3px grey;
+    border-bottom: solid 3px grey;
+}
+table.usersTable td
+{
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+}
+table.usersTable td.editButton
+{
+    width:25px;
+    text-align: center;
+}
+
+
+
+    /* VERY BEAUTIFUL FORM STYLE */
+
+.form-style-7{
+    max-width:400px;
+    margin:50px;
+    background:#fff;
+    border-radius:5px;
+    padding:20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #666; /* C5C5C5 */
+    font-size:x-large;
+}
+.form-style-7 ul{
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+.form-style-7 li{
+    display: block;
+    padding: 9px;
+    border:1px solid #666; /* DDDDDD */
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child{
+    border:none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.form-style-7 li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 16px;
+    padding: 2px 5px 2px 5px;
+    color: #666; /* B9B9B9 */
+    font-size: 16px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 textarea
+{
+     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 50px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 textarea#comments{
+    height: 125px;
+}
+
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus 
+{
+}
+.form-style-7 li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #666; /* C0C0C0 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.form-style-7 textarea{
+    resize:none;
+}
+
+
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="reset"],
+.form-style-7 input[type="button"]{
+    background: #266098;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #EF8200;
+    border-radius: 5px;
+    color: #D2E2FF;
+    
+    transition: background 0.5s;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="reset"]:hover,
+.form-style-7 input[type="button"]:hover{
+    background: #EF8200;
+    color:#fff;
+}
+.form-style-7 fieldset{
+    vertical-align: top;
+    border: none;
+}
+
+    /* FOR ALL THE BUTTONS */
+
+button{
+    background: #266098;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #EF8200;
+    border-radius: 5px;
+    color: #D2E2FF;
+    
+    transition: background 0.5s;
+}
+
+button:hover{
+    background: #EF8200;
+    color:#fff;
+}
+
+button a#logout{
+    color: #D2E2FF;
+    text-decoration: none;
+}
+
+
+/* Set the styling for the links */
+a:link {
+    text-decoration: none;
+    color: #EF8200;
+    text-shadow: 1px 1px #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #EF8200;
+    text-shadow: 1px 1px #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #EF8200;
+    text-shadow: 1px 1px #000000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #EF8200;
+    text-shadow: 1px 1px #000000;
+}
+
+
